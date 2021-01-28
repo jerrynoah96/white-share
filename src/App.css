@@ -2,37 +2,208 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*LANDING STYLES*/
+.landing{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-child{
+  width: 50vw;
+  height: 100vh;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side1{
+  background-image: url("./images/landing1.png");
+  position: relative;
+}
+
+.side2{
+  background-image: url("./images/landing2.png");
+  position: relative;
+}
+
+.logo-div{
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  height: 10vh;
+  width: auto;
+  color: rgba(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  height: 2rem;
+  width: 2rem;
+}
+.landing-child-text{
+  color: rgba(255, 255, 255);
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 40%;
+  font-size: 2.5rem;
+  font-weight: 400;
+
+}
+
+.landing-btn{
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  background-color: rgba(115, 102, 240, 0.7);
+  color: rgba(255, 255, 255);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.landing-btn:hover{
+  background-color: rgba(115, 102, 240, 0.9);
+}
+
+/*SIGNUP STYLES*/
+
+.signIn-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.float-left{
+  width: 65vw;
+  height: 100vh;
+  position: relative;
+  background-color: #161D31;
+
+}
+.form-image{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-div{
+  background-color: #3B4253;
+  color: rgba(255, 255, 255);
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+
+}
+
+.form-div form{
+  position: absolute;
+  height: 60%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+  
+}
+.form-input-div{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-input-div label{
+  margin-right: auto;
+  
+ 
+}
+
+.form-input-div input{
+  height: 1.7rem;
+  background: none;
+  border: none;
+  border: thin solid  rgba(255, 255, 255, 0.3);
+}
+.form-welcome-text{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: start;
+  
+ 
+}
+
+.password-forgotPassword{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.password-forgotPassword a{
+  color: #7367F0;
+  line-height: 0.3rem;
+  cursor: pointer;
+}
+
+
+.form-title{
+  text-align: start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.rememberMe-checkbox{
+  text-align: start;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.rememberMe-checkbox input[type="checkbox"]{
+  background-color: #3B4253 !important;
+}
+.rememberMe-checkbox a{
+  color: #7367F0;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-div button{
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #7367F0;
+  border: none;
+  color: rgba(255, 255, 255);
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.btn-div button:hover{
+  background-color: #7367F0;
+}
+.btn-div a{
+  color: #7367F0;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+  outline: none;
+  color: rgba(255, 255, 255);
+
+}
+.reset-password-btn{
+  margin-top: 1rem;
+}
+
+.reset-password-btn p{
+  font-size: 0.8rem;
 }
